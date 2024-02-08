@@ -13,7 +13,9 @@ require("dotenv").config({ path: `./Starter/.env` }); // for .env to store secre
 // app.delete("/api/ids/:id", (req, res) => {}); //delete task
 
 //middleware
-// app.use(express.static(`./TaskManager/Starter/public`));
+app.use(
+  express.static(`C:/Prem/LearnNodeJS/Projects/TaskManager/Starter/public`)
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 

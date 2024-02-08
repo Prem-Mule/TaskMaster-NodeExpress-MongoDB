@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400|Inconsolata:400');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400|Inconsolata:400");
 *,
 ::after,
 ::before {
@@ -45,8 +45,8 @@
   --green-dark: #0f5132;
 
   /* typography */
-  --headingFont: 'Inconsolata', monospace;
-  --bodyFont: 'Montserrat', sans-serif;
+  --headingFont: "Inconsolata", monospace;
+  --bodyFont: "Montserrat", sans-serif;
   --smallText: 0.7em;
   /* rest */
   --backgroundColor: var(--grey-50);
@@ -76,6 +76,8 @@ body {
   font-family: var(--bodyFont);
   font-weight: 400;
   line-height: 1.75;
+  background-color: black;
+  color: white;
 }
 
 p {
@@ -174,10 +176,11 @@ button.block {
 *************/
 form {
   width: 100%;
-  background: var(--white);
+  background: var(--grey-1000);
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-2);
   padding: 2rem 2.5rem;
+  color: white;
 }
 label {
   display: block;
@@ -300,7 +303,7 @@ form > :last-child {
 .form-loading::before {
   background: var(--white);
   position: absolute;
-  content: '';
+  content: "";
   height: 100%;
   width: 100%;
   top: 0;
@@ -310,7 +313,7 @@ form > :last-child {
 }
 
 .form-loading::after {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(50% - 3rem);
   left: calc(50% - 3rem);
@@ -335,6 +338,7 @@ form > :last-child {
   margin: 0 auto;
   margin-top: 2rem;
   padding-bottom: 4rem;
+  background-color: var(--grey-1100);
 }
 .tasks {
   display: grid;
@@ -342,7 +346,7 @@ form > :last-child {
 }
 .single-task {
   padding: 1rem 2.5rem;
-  background: var(--white);
+  background: grey;
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-2);
   transition: var(--transition);
