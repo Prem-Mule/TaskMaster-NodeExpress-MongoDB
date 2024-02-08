@@ -264,7 +264,7 @@ form > :last-child {
 }
 
 .alert-success {
-  color: var(--green-dark);
+  color: var(--green-light);
   background-color: var(--green-light);
 }
 .alert-danger {
@@ -275,7 +275,7 @@ form > :last-child {
   color: var(--red-dark);
 }
 .text-success {
-  color: var(--green-dark);
+  color: var(white);
 }
 /* loading */
 @keyframes spinner {

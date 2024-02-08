@@ -35,7 +35,7 @@ const updateTask = asyncWrapper(async (req, res, next) => {
 
   res.status(200).json({ task });
 });
-const deleteTask = async (req, res, next) => {
+const deleteTask = async (req, res, next ) => {
   const { id: taskID } = req.params;
   const deletedTask = await Task.findByIdAndDelete(taskID);
   if (!deletedTask) {
